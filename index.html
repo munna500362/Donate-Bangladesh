@@ -9,7 +9,7 @@
 </head>
 <body>
     
-    <header >
+    <header class="fixed top-0 left-0 w-full z-50 bg-white" >
         <nav>
             <div class="flex justify-between bg-amber-50 px-10 py-5 ">
                 <div>
@@ -23,7 +23,7 @@
                 </div>
                 <div class="flex gap-1 md:gap-2 items-center">
                     <img src="image/coin.png" alt="">
-                    <h2 class="font-bold text-xl">5000BDT</h2>
+                    <h2 id="my-money" class="font-bold text-xl">5000BDT</h2>
                 </div>
                 
             </div>
@@ -38,20 +38,20 @@
                 <button class="btn text-lg font-semibold border bg-gray-100 px-3 py-1 rounded">History</button>
             </div>
         </div>
-        <div class="divider"></div>
+        <!-- <div class="divider"></div> -->
     </header>
 
-    <main class="space-y-3 md:space-y-5">
+    <main class="mt-10 pt-10 mb-10 space-y-3 md:space-y-5 border-t ">
         
         <!-- Donation 1 -->
         
-        <div class="mx-20">
-            <div class="hero rounded-lg border">
+        <div class="mx-20 ">
+            <div class="hero rounded-lg border  mt-32 pt-5">
                 <div class="hero-content flex-col lg:flex-row">
                     <div class="flex-1">
-                        <img
+                        <img 
                         src="image/noakhali.png"
-                        class=" rounded-lg shadow-xl p-0" />
+                        class=" rounded-lg shadow-xl p-0 h-full" />
                     </div>
                    
                     <div class="flex-1">
@@ -59,17 +59,42 @@
                             <!-- <div class="flex items-center"> -->
                             <button class="btn mb-5">
                                 <img  src="image/coin.png" alt="">
-                                1012BDT
+                                <p id="noakhali-donate">1012BDT</p>
                             </button>
                             <!-- </div> -->
                             <h1 class="text-3xl font-bold">Donate for Flood at Noakhali, Bangladesh</h1>
                             <p class="py-3">
                                  The recent floods in Noakhali have caused significant damage to homes  infrastructure. Your donation will help provide essential supplies and  to those affected by this disaster. Every contribution, big or small, makes  difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.
                             </p>
-                            <input class="border w-full py-2 px-2 rounded-lg outline-none" type="text" placeholder="Enter Your Amount">
+                            <input id="input-noakhali" class="border w-full py-2 px-2 rounded-lg outline-none" type="text" placeholder="Enter Your Amount">
                             <br><br>
-                            <button class="btn btn-primary w-full bg-lime-300 hover:bg-lime-300 text-black outline-none border-none">Donate Now</button>
+
+
+                            <button id="donate-noakhali-btn" class="btn btn-primary w-full bg-lime-300 hover:bg-lime-300 text-black outline-none border-none">Donate Now</button>
+                            <dialog id="congration-noakhali" class="modal">
+                                <div class="modal-box text-center ">
+                                    <h1 class="text-4xl font-extrabold">Congratulate!</h1>
+                                    <div class="flex justify-center pt-3">
+                                        <img class="text-center" src="image/coin.png" alt="">
+                                    </div>
+                                    
+                                    <p class="py-4">You Have Donation for Noakhali</p>
+                                    <h3 class="text-lg font-bold">Successful</h3>
+                                    <div class="modal-action flex justify-center items-center">
+                                        <form method="dialog">
+                                        <!-- if there is a button in form, it will close the modal -->
+                                            <div class="">
+                                                <button class="btn ">
+                                                close confirmation
+                                                </button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </dialog>
+                            
                         </form>
+                        
                         
                     </div>
                 </div>
@@ -144,6 +169,10 @@
             </div>
         </div>
     </main>
+
     
+    <script src="js/noakhali.js"></script>
+    <script src="js/index.js"></script>
+
 </body>
 </html>
