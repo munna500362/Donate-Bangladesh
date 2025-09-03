@@ -23,7 +23,7 @@
                 </div>
                 <div class="flex gap-1 md:gap-2 items-center">
                     <img src="image/coin.png" alt="">
-                    <h2 id="my-money" class="font-bold text-xl">5000BDT</h2>
+                    <h2 id="my-money" class="font-bold text-xl">5000</h2><p class="font-bold text-xl">BDT</p>
                 </div>
                 
             </div>
@@ -32,16 +32,16 @@
 
         <div class="flex justify-center gap-3 md:gap-5 my-2 md:my-3 px-2 md:py-3 ">
             <div>
-                <button class="btn text-lg font-semibold overflow-hidden bg-lime-300 hover:bg-lime-300 px-3 py-1 rounded">Donation</button>
+                <button id="donation-data" class="btn text-lg font-semibold overflow-hidden bg-lime-300 hover:bg-lime-300 px-3 py-1 rounded">Donation</button>
             </div>
             <div>
-                <button class="btn text-lg font-semibold border bg-gray-100 px-3 py-1 rounded">History</button>
+                <button id="donate-history" class="btn text-lg font-semibold border bg-gray-100 px-3 py-1 rounded">History</button>
             </div>
         </div>
         <!-- <div class="divider"></div> -->
     </header>
 
-    <main class="mt-10 pt-10 mb-10 space-y-3 md:space-y-5 border-t ">
+    <main id="main-section" class="mt-10 pt-10 mb-10 space-y-3 md:space-y-5 border-t ">
         
         <!-- Donation 1 -->
         
@@ -71,7 +71,7 @@
 
 
                             <button id="donate-noakhali-btn" class="btn btn-primary w-full bg-lime-300 hover:bg-lime-300 text-black outline-none border-none">Donate Now</button>
-                            <dialog id="congration-noakhali" class="modal">
+                           <dialog id="congration-noakhali" class="modal">
                                 <div class="modal-box text-center ">
                                     <h1 class="text-4xl font-extrabold">Congratulate!</h1>
                                     <div class="flex justify-center pt-3">
@@ -82,7 +82,7 @@
                                     <h3 class="text-lg font-bold">Successful</h3>
                                     <div class="modal-action flex justify-center items-center">
                                         <form method="dialog">
-                                        <!-- if there is a button in form, it will close the modal -->
+                                         <!-- if there is a button in form, it will close the modal  -->
                                             <div class="">
                                                 <button class="btn ">
                                                 close confirmation
@@ -91,7 +91,7 @@
                                         </form>
                                     </div>
                                 </div>
-                            </dialog>
+                             </dialog> 
                             
                         </form>
                         

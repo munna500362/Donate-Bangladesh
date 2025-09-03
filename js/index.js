@@ -10,3 +10,14 @@ function getDonateFieldById(id){
     const FieldValueNumber = parseFloat(FieldValue);
     return FieldValueNumber;
 }
+
+
+document.getElementById("donate-history").addEventListener('click', function(event){
+    event.preventDefault();
+    document.getElementById("main-section").classList.add('hidden');
+})
+
+document.getElementById("donation-data").addEventListener('click', function(event){
+    event.preventDefault();
+    document.getElementById("main-section").classList.remove("hidden");
+})

@@ -19,6 +19,22 @@ document.getElementById('donate-noakhali-btn').addEventListener('click', functio
     let FinalAmount = Amount-NoakhaliInput;
     document.getElementById("my-money").innerText = FinalAmount;
     console.log("Final Amount :", FinalAmount);
+
+    // const div = document.createElement('div');
+    // div.classList.add("noakhali-history", "bg-green-500", "hidden");
+
+    // div.innerHTML = `
+    // <h1 class=" text-xl font-semibold">Donation for Noakhali!</h1>
+    // <p>Your Donation Amount ${NoakhaliInput} TK.</p>
+    // <h3>Your Corrent Balance ${FinalAmount} TK.</h3>`
+    // document.getElementById('donate-history').appendChild(div);
+    // document.getElementById('donate-history').addEventListener('click',function(event){
+    //     event.preventDefault();
+    //     let histories = document.getElementsByClassName("noakhali-history");
+    //     for (let item of histories) {
+    //         item.classList.remove("hidden");
+    //     }
+    // })
    }
    else{
     alert("Please enter your righ amount")
