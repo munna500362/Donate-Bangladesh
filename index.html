@@ -118,7 +118,7 @@
                             <!-- <div class="flex items-center"> -->
                             <button class="btn mb-5">
                                 <img  src="image/coin.png" alt="">
-                                1012BDT
+                                <p id="feni-donate">1012BDT</p>
                             </button>
                             <!-- </div> -->
                             <h1 class="text-3xl font-bold">Donate for Flood Relief in Feni,Bangladesh
@@ -127,9 +127,31 @@
                             <p class="py-3">
                                 The recent floods in Feni have devastated local communities, leading to severe disruption and loss. Your generous donation will help provide immediate aid, including food, clean water, and medical supplies, to those affected by this calamity. Together, we can offer crucial support and help rebuild lives in the aftermath of this disaster. Every contribution counts towards making a real difference. Please consider donating today to assist those in urgent need.
                             </p>
-                            <input class="border w-full py-2 px-2 rounded-lg outline-none" type="text" placeholder="Enter Your Amount">
+                            <input id="input-donate-feni" class="border w-full py-2 px-2 rounded-lg outline-none" type="text" placeholder="Enter Your Amount">
                             <br><br>
-                            <button class="btn btn-primary w-full bg-lime-300 hover:bg-lime-300 text-black outline-none border-none">Donate Now</button>
+                            <button id="donate-feni-btn" class="btn btn-primary w-full bg-lime-300 hover:bg-lime-300 text-black outline-none border-none">Donate Now</button>
+                            
+                            <dialog id="congration-feni" class="modal">
+                                <div class="modal-box text-center ">
+                                    <h1 class="text-4xl font-extrabold">Congratulate!</h1>
+                                    <div class="flex justify-center pt-3">
+                                        <img class="text-center" src="image/coin.png" alt="">
+                                    </div>
+                                    
+                                    <p class="py-4">You Have Donation for Noakhali</p>
+                                    <h3 class="text-lg font-bold">Successful</h3>
+                                    <div class="modal-action flex justify-center items-center">
+                                        <form method="dialog">
+                                          <!-- if there is a button in form, it will close the modal   -->
+                                            <div class="">
+                                                <button class="btn ">
+                                                close confirmation
+                                                </button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                             </dialog>
                         </form>
                         
                     </div>
@@ -181,6 +203,7 @@
     <script src="js/index.js"></script>
     <script src="js/feature.js"></script>
     <script src="js/noakhali.js"></script>
+    <script src="js/feni.js"></script>
     
 
 </body>
