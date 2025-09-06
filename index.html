@@ -18,8 +18,8 @@
                     </button>
                 </div>
                 <div class="flex gap-2 md:gap-3 items-center">
-                    <img class="w-1/6" src="image/logo.png" alt="">
-                    <h2 class="font-extrabold text-xl">Donate Bangladesh</h2>
+                    <img class="w-1/2 md:w-1/6" src="image/logo.png" alt="">
+                    <h2 class="hidden md:block font-extrabold text-xl">Donate Bangladesh</h2>
                 </div>
                 <div class="flex gap-1 md:gap-2 items-center">
                     <img src="image/coin.png" alt="">
@@ -70,9 +70,9 @@
                             </p>
                             <input id="input-noakhali" class="border w-full py-2 px-2 rounded-lg outline-none" type="text" placeholder="Enter Your Amount">
                             <br><br>
-
-
-                            <button id="donate-noakhali-btn" class="btn btn-primary w-full bg-lime-300 hover:bg-lime-300 text-black outline-none border-none">Donate Now</button>
+                            
+                        </form>
+                         <button id="donate-noakhali-btn" class="btn btn-primary w-full bg-lime-300 hover:bg-lime-300 text-black outline-none border-none">Donate Now</button>
                             <dialog id="congration-noakhali" class="modal">
                                 <div class="modal-box text-center ">
                                     <h1 class="text-4xl font-extrabold">Congratulate!</h1>
@@ -94,9 +94,6 @@
                                     </div>
                                 </div>
                              </dialog>
-                            
-                        </form>
-                        
                         
                     </div>
                 </div>
@@ -104,7 +101,7 @@
             </div>
             <!-- Donation 2 -->
 
-            <div class="mx-20">
+            <div class="mx-20 mt-5 md:mt-10">
             <div class="hero rounded-lg border">
                 <div class="hero-content flex-col lg:flex-row">
                     <div class="flex-1">
@@ -129,7 +126,9 @@
                             </p>
                             <input id="input-donate-feni" class="border w-full py-2 px-2 rounded-lg outline-none" type="text" placeholder="Enter Your Amount">
                             <br><br>
-                            <button id="donate-feni-btn" class="btn btn-primary w-full bg-lime-300 hover:bg-lime-300 text-black outline-none border-none">Donate Now</button>
+                            
+                        </form>
+                        <button id="donate-feni-btn" class="btn btn-primary w-full bg-lime-300 hover:bg-lime-300 text-black outline-none border-none">Donate Now</button>
                             
                             <dialog id="congration-feni" class="modal">
                                 <div class="modal-box text-center ">
@@ -152,15 +151,13 @@
                                     </div>
                                 </div>
                              </dialog>
-                        </form>
-                        
                     </div>
                 </div>
             </div>
             </div>
 
             <!-- Donation 3 -->
-            <div class="mx-20">
+            <div class="mx-20 mt-5 md:mt-10">
             <div class="hero rounded-lg border">
                 <div class="hero-content flex-col lg:flex-row">
                     <div class="flex-1">
@@ -174,7 +171,7 @@
                             <!-- <div class="flex items-center"> -->
                             <button class="btn mb-5">
                                 <img  src="image/coin.png" alt="">
-                                1012BDT
+                                <p id="quota-donate">1012BDT</p>
                             </button>
                             <!-- </div> -->
                             <h1 class="text-3xl font-bold">Aid for Injured in the Quota Movement
@@ -183,11 +180,34 @@
                             <p class="py-3">
                                 The recent Quota movement has resulted in numerous injuries and significant hardship for many individuals. Your support is crucial in providing medical assistance, rehabilitation, and necessary supplies to those affected. By contributing, you help ensure that injured individuals receive the care and support they need during this challenging time. Every donation plays a vital role in alleviating their suffering and aiding in their recovery. Please consider making a donation to support these brave individuals in their time of need.
                             </p>
-                            <input class="border w-full py-2 px-2 rounded-lg outline-none" type="text" placeholder="Enter Your Amount">
+                            <input id="input-donate-quota" class="border w-full py-2 px-2 rounded-lg outline-none" type="text" placeholder="Enter Your Amount">
                             <br><br>
-                            <button class="btn btn-primary w-full bg-lime-300 hover:bg-lime-300 text-black outline-none border-none">Donate Now</button>
+                           
+
+                            
                         </form>
-                        
+                         <button id="donate-quota-btn" class="btn btn-primary w-full bg-lime-300 hover:bg-lime-300 text-black outline-none border-none">Donate Now</button>
+                        <dialog id="congration-quota" class="modal">
+                                <div class="modal-box text-center ">
+                                    <h1 class="text-4xl font-extrabold">Congratulate!</h1>
+                                    <div class="flex justify-center pt-3">
+                                        <img class="text-center" src="image/coin.png" alt="">
+                                    </div>
+                                    
+                                    <p class="py-4">You Have Donation for Injured in the Quota Movement</p>
+                                    <h3 class="text-lg font-bold">Successful</h3>
+                                    <div class="modal-action flex justify-center items-center">
+                                        <form method="dialog">
+                                          <!-- if there is a button in form, it will close the modal   -->
+                                            <div class="">
+                                                <button class="btn ">
+                                                close confirmation
+                                                </button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                             </dialog>
                     </div>
                 </div>
             </div>
@@ -204,6 +224,7 @@
     <script src="js/feature.js"></script>
     <script src="js/noakhali.js"></script>
     <script src="js/feni.js"></script>
+    <script src="js/quota.js"></script>
     
 
 </body>
